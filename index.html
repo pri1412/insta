@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:100vw;
+                height:100vh;
+                overflow: hidden;
+            }
+            .outerbox{
+                width:150px;
+                height: 150px;
+                display: grid;
+                place-items: center;
+                background: radial-gradient(at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5959 45%,#d6249f 60%,
+                #285aeb 90%);
+                border-radius: 35%;
+            }
+            .innerbox{
+                width:120px;
+                height:120px;
+                border:10px solid white;
+                border-radius: 32px;
+                display:grid;
+                place-items: center;
+                position: relative;
+            }
+            .innerbox::before{
+                content: '';
+                width:45px;
+                height: 45px;
+                border:10px solid white;
+                border-radius: 50px;
+                background: transparent;
+                position: absolute;
+            }
+            .innerbox::after{
+                content: '';
+                width:10px;
+                height: 10px;
+                border:2px solid white;
+                border-radius: 50px;
+                background: white;
+                position: absolute;
+                top:8px;
+                right: 10px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="outerbox">
+
+
+
+            <div class="innerbox">
+
+            </div>
+        </div>
